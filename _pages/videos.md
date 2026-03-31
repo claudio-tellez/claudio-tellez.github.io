@@ -1,5 +1,5 @@
 ---
 permalink: /videos/
-title: "videos"
+title: "Videos"
 ---
 My videos
