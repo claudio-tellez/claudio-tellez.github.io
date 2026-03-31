@@ -23,7 +23,7 @@ repository               : "claudio-tellez/claudio-tellez.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "claudiotellez.png"
+  avatar           : "profile.png"
   name             : "Claudio Téllez"
   pronouns         : # example: "she/her"  
   bio              : "PhD in International Relations, Mathematician"
