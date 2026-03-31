@@ -23,7 +23,7 @@ repository               : "claudio-tellez/claudio-tellez.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "/images/profile.png"
   name             : "Claudio Téllez"
   pronouns         : # example: "she/her"  
   bio              : "PhD in International Relations, Mathematician"
@@ -58,7 +58,7 @@ author:
   # Social media
   #artstation       : # Username
   #bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : "https://www.facebook.com/claudiotellez"
+  facebook         : "claudiotellez"
   #flickr           : # Username
   #foursquare       : # Username
   #goodreads        : # Username
@@ -79,7 +79,7 @@ author:
   #weibo            : # Username
   #wikipedia        : # Username
   #xing             : # Username
-  youtube          : "@claudio_tellez"
+  youtube          : "claudio_tellez"
   #zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
