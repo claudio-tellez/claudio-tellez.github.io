@@ -1,32 +1,41 @@
-# Basic Site Settings
-locale                   : "en-US"
-lang                     : "en"
-site_theme               : "mint"
-title                    : "Claudio Téllez"
-title_separator          : "-"
-name                     : &name "Claudio Téllez"
-description              : &description "Claudio Téllez's academic portfolio"
-url                      : "https://claudio-tellez.github.io"
-baseurl                  : ""
-base_path                : "https://claudio-tellez.github.io"
-repository               : "claudio-tellez/claudio-tellez.github.io"
-timezone                 : America/Sao_Paulo
+# ================================
+# BASIC SETTINGS
+# ================================
+locale: "en-US"
+lang: "en"
+title: "Claudio Téllez"
+title_separator: "-"
+name: "Claudio Téllez"
+description: "Claudio Téllez's academic portfolio"
 
-# Author
+url: "https://claudio-tellez.github.io"
+baseurl: ""
+base_path: "https://claudio-tellez.github.io"
+
+repository: "claudio-tellez/claudio-tellez.github.io"
+timezone: America/Sao_Paulo
+
+site_theme: "mint"
+
+# ================================
+# AUTHOR
+# ================================
 author:
-  avatar           : "https://claudio-tellez.github.io/images/profile.png"
-  name             : "Claudio Téllez"
-  bio              : "PhD in International Relations, Mathematician"
-  location         : "Teresópolis/RJ - Brazil"
-  uri              : "https://claudio-tellez.github.io"
-  email            : "tellez.ca@gmail.com"
-  orcid            : "https://orcid.org/0000-0001-6215-7781"
-  facebook         : "claudiotellez"
-  instagram        : "claudio.tellez"
-  linkedin         : "tellezzepeda"
-  youtube          : "claudio_tellez"
+  avatar: "https://claudio-tellez.github.io/images/profile.png"
+  name: "Claudio Téllez"
+  bio: "PhD in International Relations, Mathematician"
+  location: "Teresópolis/RJ - Brazil"
+  uri: "https://claudio-tellez.github.io"
+  email: "tellez.ca@gmail.com"
+  orcid: "https://orcid.org/0000-0001-6215-7781"
+  facebook: "claudiotellez"
+  instagram: "claudio.tellez"
+  linkedin: "tellezzepeda"
+  youtube: "claudio_tellez"
 
-# Social (SEO structured data)
+# ================================
+# SOCIAL / SEO
+# ================================
 social:
   type: Person
   name: "Claudio Téllez"
@@ -35,39 +44,30 @@ social:
     - "https://orcid.org/0000-0001-6215-7781"
     - "https://linkedin.com/in/tellezzepeda"
 
-# Open Graph
-og_image: /images/profile.png
+og_image: "/images/profile.png"
 og_description: "International Relations theorist working on institutions, political theory, and global order."
 
-# Publication categories
-publication_category:
-  books:
-    title: "Books"
-  manuscripts:
-    title: "Journal Articles"
-  conferences:
-    title: "Conference Papers"
+# ================================
+# SITE SETTINGS
+# ================================
+breadcrumbs: false
+words_per_minute: 160
+future: true
+read_more: "disabled"
+talkmap_link: false
 
-# Site Settings
-breadcrumbs              : false
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled"
-talkmap_link             : false
-
-# Comments (disabled)
+# ================================
+# COMMENTS / ANALYTICS
+# ================================
 comments:
   provider: false
 
-# Atom feed
-atom_feed:
-  hide: false
-
-# Analytics
 analytics:
   provider: false
 
-# Files
+# ================================
+# FILE HANDLING
+# ================================
 include:
   - .htaccess
   - _pages
@@ -108,7 +108,9 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# Markdown
+# ================================
+# MARKDOWN
+# ================================
 markdown: kramdown
 highlighter: rouge
 
@@ -118,25 +120,29 @@ kramdown:
   auto_ids: true
   toc_levels: 1..6
 
-# Collections
+# ================================
+# COLLECTIONS
+# ================================
 collections:
-  teaching:
-    output: true
-    permalink: /teaching/:path/
   publications:
     output: true
     permalink: /publications/:path/
-  portfolio:
-    output: true
-    permalink: /portfolio/:path/
   talks:
     output: true
     permalink: /talks/:path/
+  teaching:
+    output: true
+    permalink: /teaching/:path/
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
   working_papers:
     output: true
     permalink: /working-papers/:path/
 
-# Defaults
+# ================================
+# DEFAULTS
+# ================================
 defaults:
   - scope:
       path: ""
@@ -144,24 +150,28 @@ defaults:
     values:
       layout: single
       author_profile: true
+
   - scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
+
   - scope:
       path: ""
       type: publications
     values:
       layout: single
       author_profile: true
+
   - scope:
       path: ""
       type: talks
     values:
       layout: talk
       author_profile: true
+
   - scope:
       path: ""
       type: working_papers
@@ -169,10 +179,14 @@ defaults:
       layout: single
       author_profile: true
 
-# Permalinks (clean academic URLs)
+# ================================
+# URL STRUCTURE
+# ================================
 permalink: /:title/
 
-# Plugins
+# ================================
+# PLUGINS
+# ================================
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -189,15 +203,20 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
-# Archives
+# ================================
+# ARCHIVES
+# ================================
 category_archive:
   type: liquid
   path: /categories/
+
 tag_archive:
   type: liquid
   path: /tags/
 
-# HTML Compression
+# ================================
+# HTML COMPRESSION
+# ================================
 compress_html:
   clippings: all
   ignore:
